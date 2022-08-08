@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+body {
+    background-color: lightskyblue;
+     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+     font-size: 20px;
+} 
+
+h1 {
+   background-color: lightpink;
+   color: beige;
+}
+
+h2 {
+   color: pink;
+}
+
+p {
+   text-align: justify;
+}

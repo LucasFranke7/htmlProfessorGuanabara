@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+
+h1 {
+   background-color: lightpink;
+   color: rgb(4, 19, 111);
+}
+
+h2 {
+   color: rgb(186, 16, 44);
+}
+
+p {
+   text-align: justify;
+}
