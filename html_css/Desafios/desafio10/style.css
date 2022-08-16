@@ -16,6 +16,7 @@
 body{
     background-color: #84e1ad;
     
+    
 }
 
 header{
@@ -34,9 +35,11 @@ header h1{
     margin-bottom: 15px;
 
 }
+
 header p{
     text-align: center;
-    margin-bottom: 15px;
+    margin: 15px auto;
+    width: 400px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -45,21 +48,25 @@ menu{
     padding:0px 10px 10px 20px;
     
 }
-menu a{ 
+menu a:link,a:active{ 
     text-decoration: none;
-    color: white;
+    color:white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: small;
     margin-right: 15px;
 }
+menu a:visited{
+color: white;
+}
 
 main{
     background-color: white;
-    margin: auto;
+    margin: 0px auto 15px;
     width: 65%;
     padding: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.344);
+    border-radius: 0px 0px 10px 10px;
 }
 
 main>h1{
@@ -83,12 +90,70 @@ main p{
     line-height: 1.5em;
     text-align: justify;
     text-indent: 30px;
+    font-size: 18px;
 }
+main strong{
+    color: #31c777;
+}
+main a:link, a:visited,a:active{
+    color: #31c777;
+    text-decoration: none;
+    font-weight: bold;
+}
+i{
+    color: #555;
+    margin-left: -25px;
+}
+
 picture img{
-    width: 95%;
+    width: 100%;
 }
 #video{
     background-color:#115530;
-    padding: 15PX;
-    margin: 0px -20px;
+    padding: 20px;
+    margin: 15px -20px 15px -20px;
+    
+    
+    
+}
+#extra{
+    background-color: #c5ebd6;
+    border-radius: 20px;
+    
+    
+}
+#extra h3{
+background-color: #31c777;
+border-radius: 20px 20px 0px 0px;
+padding: 10px;
+color: white; 
+font-weight: bold;
+}
+#extra p{
+    margin: 10px;
+    padding: 15px 0px;
+}
+#extra td{
+    width: 600px;
+}
+
+#extra ul{
+    
+}
+/* <i class="fa-solid fa-check"></i> */
+#extra li{
+    list-style-type: disc;
+    margin-left: 25px;
+    
+}
+footer{
+    background-color:#115530 ;
+    text-align: center;
+    padding: 10px;
+    font-size:small;
+    color: rgba(255, 255, 255, 0.737);
+    font-family:Arial, Helvetica, sans-serif;
+}
+footer strong{
+    color: white;
 }
