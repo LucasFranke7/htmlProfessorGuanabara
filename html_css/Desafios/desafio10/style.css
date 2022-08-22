@@ -7,7 +7,7 @@
     font-family:'bebas' ;
     src: url(fontes/BebasNeue-Regular.ttf) format('truetype');
 }
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 
 *{
     margin: 0px;
@@ -31,6 +31,7 @@
 
 body{
     background-color: var(--cor0);
+    font-family: var(--fonte-body);
     
     
 }
@@ -40,47 +41,61 @@ header{
     background-image:linear-gradient(to top, var(--cor4), var(--cor2));  
     color: white;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.259);
+    padding: 15px 10px 10px 0;
+    text-align: center;
 
 }
 header h1{
     font-family: var(--fonte-header);
     text-transform: uppercase;
-    text-align: center;
-    padding: 15px 10px 0px 10px ;
+    padding: 15px 10px 0px 0px ;
     font-weight: 200;
     margin-bottom: 15px;
-    font-size:2.7em;
+    font-size:3.7em;
+    text-shadow: 3px 3px  rgba(51, 51, 51, 0.541);
 
 }
 
 header p{
-    text-align: center;
+    
     margin: 15px auto;
     width: 400px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    text-shadow: 1px 1px  rgba(51, 51, 51, 0.541);
+    
 }
 
 
 nav{
-    padding:0px 10px 10px 20px;
+    padding:10px 10px 10px 20px;
+    background-image:linear-gradient(to top, var(--cor5), var(--cor4));
+    box-shadow: 0px 5px 5px rgba(63, 63, 63, 0.275);
+    font-size: 1.3em;
+    
+   
     
 }
-nav a:link,a:active{ 
+nav a{ 
     text-decoration: none;
     color:white;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    font-size: small;
     margin-right: 15px;
+    transition-duration: .5s;
+    padding: 15px;
 }
 nav a:visited{
 color: white;
 }
-
-article{
+nav a:hover{
+    color: var(--cor4);
     background-color: white;
-    margin: 0px auto 15px;
-    width: 65%;
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    min-width: 65%;
+    max-width: 1200px;
     padding: 20px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.344);
     border-radius: 0px 0px 10px 10px;
@@ -88,45 +103,60 @@ article{
 
 article>h1{
     font-family:"idroid", sans-serif;
-    color: #115530;
+    color: var(--cor4);
     margin-bottom: 15px;
 }
 
 article>h2{
     
     font-family:"idroid", sans-serif;
-    background-image: linear-gradient(to right, #c3e9d4,#ffffff);
+    background-image: linear-gradient(to right, var(--cor0),transparent);
     padding-left: 10px;
-    color: #125632;
+    color: var(--cor4);
     margin: 15px 0px;
+    font-size: 1.3em;
 }
 
 article p{
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: 500;
     line-height: 1.5em;
     text-align: justify;
     text-indent: 30px;
-    font-size: 18px;
+    font-size: 1.5em;
+    margin: 15px 0px ;
 }
 article strong{
-    color: #31c777;
+    color: var(--cor4);
 }
-article a:link, a:visited,a:active{
-    color: #125332;
+a.externo::after{
+    content: '\00A0\1F517';
+}
+article a {
+    color: var(--cor4);
     text-decoration: none;
     font-weight: bold;
-    background-color: #5caf7d62;
+    background-color: var(--cor0);
+    padding: 1px 6px;
+}
+article a:hover{
+    text-decoration:underline;
 }
 
 
-i{
+
+article i{
     color: #555;
     margin-left: -25px;
 }
 
 picture img{
     width: 100%;
+}
+
+.pequena{
+    width: 500px;
+    display: block;
+    margin: auto;
 }
 #video{
     background-color:#115530;
@@ -138,13 +168,14 @@ picture img{
 }
 #extra{
     background-color: #c5ebd6;
-    border-radius: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px #333;
     
     
 }
 #extra h3{
 background-color: #31c777;
-border-radius: 20px 20px 0px 0px;
+border-radius: 10px 10px 0px 0px;
 padding: 10px;
 color: white; 
 font-weight: bold;
@@ -156,33 +187,24 @@ font-weight: bold;
 #extra td{
     width: 600px;
 }
-
-
-/* <i class="fa-solid fa-check"></i> */
-#extra li{
-    list-style-type: disc;
+aside ul {
+    list-style-type:'\2714\00A0\00A0';
     margin-left: 25px;
-    
+    list-style-position: inside;
+    columns: 2;
+
 }
-footer{
-    background-color:#115530 ;
-    text-align: center;
-    padding: 10px;
-    font-size:small;
-    color: rgba(255, 255, 255, 0.737);
-    font-family:Arial, Helvetica, sans-serif;
-    
-}
+
 footer strong{
     color: white;
 }
-footer a:link,a:active{ 
+footer>p>a { 
     text-decoration: none;
     color:white;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: small;
-    margin-right: 15px;
+    margin: 3px;
 }
 footer a:visited{
-color: white;
+color: white;}
